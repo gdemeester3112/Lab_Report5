@@ -17,9 +17,28 @@
 
 > For my grade.sh script to run I had to cd into list-examples-grader which is linked straight to my home directory, I also need the TestListExamples.java file, and a lib directory with JUnit and Hamcrest JAR files. The script creates student-submission and grading-area directories for cloning student repositories and compiling and running tests.
 
+
+## My code before
+
 ![Image](Before_code.png)
 
-This was my bash.sh file before I implemeted the changes I will only be showing this file as it is the only one that induces errors.
+> This was my grade.sh file before I implemeted the changes I will only be showing this file as it is the only one that induces errors.
 
+## The command line that triggered the bug: 
+
+![Image](Command_Ran.png)
+
+> This was the command I ran to run my grade.sh file
+
+## This is my code after
+
+![Image](After_code.png)
+
+> This was my code after I fixed my grade.sh, as you can see the file will now run appropriately with my lib which will make it compile fine, and i do not have a nonexistant file which is getting copied to grading-area.
+
+## Edits I did to my code:
+
+> I remove the 14th line of my code that was copy a nonexistant file to grading-area
+> I edited the 24th line from `javac -cp ' .:lib/beans-jar-file.jar' *.java ` to `javac -cp '.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' *.java `
 
 
