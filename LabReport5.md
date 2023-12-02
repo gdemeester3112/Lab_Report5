@@ -5,4 +5,4 @@
 Here's what happens: I run the script to grade a Java assignment, but it seems to fail during the compilation stage. I'm guessing there could be something wrong with the way I'm handling file paths or dependencies in the script, but I can't pinpoint the exact problem. Can someone help me figure out what's causing this issue?
 
 
-![Image](grade_bug.png)
+![Image](grade_symptoms.png)
