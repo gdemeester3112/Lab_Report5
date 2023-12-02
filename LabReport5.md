@@ -15,5 +15,11 @@
 
 ## The file and directory needed
 
-> For my grade.sh script which comes from my home directory, I also need the TestListExamples.java file, and a lib directory with JUnit and Hamcrest JAR files. The script creates student-submission and grading-area directories for cloning student repositories and compiling and running tests.
+> For my grade.sh script to run I had to cd into list-examples-grader which is linked straight to my home directory, I also need the TestListExamples.java file, and a lib directory with JUnit and Hamcrest JAR files. The script creates student-submission and grading-area directories for cloning student repositories and compiling and running tests.
+
+![Image](Before_code.png)
+
+This was my bash.sh file before I implemeted the changes I will only be showing this file as it is the only one that induces errors.
+
+
 
