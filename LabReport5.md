@@ -12,5 +12,8 @@
 
 > Thank you that helped a lot! I found out that there were two bugs in my grade.sh file, the fist one was that I was that I was referencing a jar file that was not in my lib and the second one was that I was trying to copy a nonexistant file to the grading-area.
 
+
+## The file and directory needed
+
 > For my grade.sh script which comes from my home directory, I also need the TestListExamples.java file, and a lib directory with JUnit and Hamcrest JAR files. The script creates student-submission and grading-area directories for cloning student repositories and compiling and running tests.
 
