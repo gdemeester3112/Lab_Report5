@@ -39,6 +39,8 @@
 ## Edits I did to my code:
 
 > I remove the 14th line of my code that was copy a nonexistant file to grading-area
-> I edited the 24th line from `javac -cp ' .:lib/beans-jar-file.jar' *.java ` to `javac -cp '.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' *.java `
+> I edited the 24th line from
+> `javac -cp ' .:lib/beans-jar-file.jar' *.java ` ---->
+> `javac -cp '.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' *.java `
 
 
