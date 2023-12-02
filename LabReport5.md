@@ -5,3 +5,5 @@
 
 
 ![Image](grade_symptoms.png)
+
+> Hello student, I am a TA for CSE 15L here to help you, keeping your symptom in mind, I recommend double-checking the grade.sh script for any misused file paths or directory references, as these are common sources of errors in such scripts. Here is a command that could help you figure out what the issue is: ` bash -x grade.sh [repository link] `
