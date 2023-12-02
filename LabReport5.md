@@ -7,3 +7,10 @@
 ![Image](grade_symptoms.png)
 
 > Hello student, I am a TA for CSE 15L here to help you, keeping your symptom in mind, I recommend double-checking the grade.sh script for any misused file paths or directory references, as these are common sources of errors in such scripts. Here is a command that could help you figure out what the issue is: ` bash -x grade.sh [repository link] `
+
+![Image](after_command_run.png)
+
+> Thank you that helped a lot! I found out that there were two bugs in my grade.sh file, the fist one was that I was that I was referencing a jar file that was not in my lib and the second one was that I was trying to copy a nonexistant file to the grading-area.
+
+> For my grade.sh script which comes from my home directory, I also need the TestListExamples.java file, and a lib directory with JUnit and Hamcrest JAR files. The script creates student-submission and grading-area directories for cloning student repositories and compiling and running tests.
+
