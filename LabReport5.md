@@ -38,6 +38,8 @@
 
 ```
 
+> From the home directory of edstem we can see that there is a directory called list-examples-grader that contains all the files after running bash grade.sh
+
 
 
 
