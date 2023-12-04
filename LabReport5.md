@@ -18,7 +18,27 @@
 
 ### The file and directory needed
 
-> For my grade.sh script to run I had to cd into list-examples-grader which is linked straight to my home directory, I also need the TestListExamples.java file, and a lib directory with JUnit and Hamcrest JAR files. The script creates student-submission and grading-area directories for cloning student repositories and compiling and running tests.
+```
+[user@sahara ~]$ tree
+.
+└── list-examples-grader
+    ├── GradeServer.java
+    ├── grade.sh
+    ├── grading-area
+    │ └── lib
+    │     ├── hamcrest-core-1.3.jar
+    │     └── junit-4.13.2.jar
+    ├── lib
+    │ ├── hamcrest-core-1.3.jar
+    │ └── junit-4.13.2.jar
+    ├── Server.java
+    └── TestListExamples.java
+
+5 directories, 8 files
+
+```
+
+
 
 
 ### My code before
