@@ -5,6 +5,8 @@
 > Here's what I think happens: I run the script to grade a Java assignment, but it seems to fail during the compilation stage. I'm guessing there could be something wrong with the way I'm handling file paths or dependencies in the script, but I can't pinpoint the exact problem. Can someone help me figure out what's causing this issue?
 
 ``` I ran bash grade.sh ```
+
+
 ![Image](grade_symptoms.png)
 
 > TA - Hello, keeping your symptom in mind, I recommend double-checking the grade.sh script for any misused file paths or directory references, as these are common sources of errors in such scripts. Here is a command that could help you figure out what the issue is: ` bash -x grade.sh [repository link] `
