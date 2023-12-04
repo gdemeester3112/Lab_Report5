@@ -29,7 +29,7 @@
 
 ![Image](Command_Ran.png)
 
-> This was the command I ran to run my grade.sh file
+> This was the command I ran to run my grade.sh file which caused a bug
 
 ### This is my code after
 
