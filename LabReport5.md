@@ -1,7 +1,10 @@
 # Lab Report 5
 ## Part 1
 
+
 ### Student
+
+
 
 > Hello, I'm facing an issue with my `ListExamples.java` file. When I run my `grade.sh` script for grading a Java assignment using `ListExamples.java`, it fails during compilation.
 > Can you help me troubleshoot this?"
@@ -12,7 +15,11 @@
 
 ![Image](MergeList_symptom.png)
 
+
+
 ### TA
+
+
 
 >  An easy way to figure out what is wrong with your code is to compile your `ListExamples.java` file, you can do that by running the command,
 
@@ -23,7 +30,11 @@ java ListExamples
 ```
 > I also recommend putting print statements to understand what your `ListExamples.java` file's output is.
 
+
+
 ### Student
+
+
 
 > Thank you that helped a lot! I found out that my ListExamples.java was not modifying the list correctly. After compiling the file and running it this is the output I got, I can clearly see that the array isnt the array I was expected there to be.
 
