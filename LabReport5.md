@@ -73,28 +73,19 @@ java ListExamples
 
 ```
 import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.*;
 import java.util.Arrays;
 import java.util.List;
 
 public class TestListExamples {
-
-    @Test
-    public void testMergeLists() {
-        
-        List<String> list1 = Arrays.asList("a", "b", "c");
-        List<String> list2 = Arrays.asList("1", "2", "3");
-
-        
-        List<String> expected = Arrays.asList("a", "b", "c", "1", "2", "3");
-
-        
-        List<String> result = ListExamples.mergeLists(list1, list2);
-
-        
-        assertEquals("Merged list should contain all elements from both lists", expected, result);
-    }
-
+  @Test(timeout = 500)
+  public void testMergeRightEnd() {
+    List<Object> list1 = Arrays.asList(1, 2, 3);
+    List<Object> list2 = Arrays.asList("a", "b", "c");
+    List<Object> merged = ListExamples.mergeLists(list1, list2);
+    List<Object> expected = Arrays.asList(1, 2, 3, "a", "b", "c");
+    assertEquals(expected, merged);
+  }
 }
 ```
 
