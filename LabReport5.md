@@ -178,8 +178,8 @@ public class ListExamples {
     }
 
     public static void main(String[] args) {
-        List<Object> list1 = List.of("a", "b", "c");
-        List<Object> list2 = List.of(1, 2, 3);
+        List<Object> list1 = List.of(1, 2, 3);
+        List<Object> list2 = List.of(4, 5, 6);
     }
 }
 ```
