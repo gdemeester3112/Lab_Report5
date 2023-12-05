@@ -247,8 +247,8 @@ public class ListExamples {
     }
 
     public static void main(String[] args) {
-        List<Object> list1 = List.of("a", "b", "c");
-        List<Object> list2 = List.of(1, 2, 3);
+        List<Object> list1 = List.of(1, 2, 3);
+        List<Object> list2 = List.of(4, 5, 6);
         System.out.println("Merged List: " + mergeLists(list1, list2));
     }
 }
@@ -276,6 +276,7 @@ fi
 
 > I took away the `for` loops that modified incorrectly my list1
 > I used the `addAll` method to add all of list1 elements first and then list2 elements second so they are in order
+> Fixed my `addAll` method so it doesnt add the same list twice
 
 ## Part 2
 
