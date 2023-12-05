@@ -142,9 +142,11 @@ fi
 
 ### The command line that triggered the issue: 
 
-![Image](Command_Ran.png)
+```
+[user@sahara ~/list-examples-grader]$ bash grade.sh
+```
 
-> This was the command I ran to run my grade.sh file which caused the issue. It used the TestListExamples.java to catch this issue.
+> This was the command I used to run my grade.sh file which caused the issue. It used the TestListExamples.java to discover this issue.
 
 ### This is my code after
 
