@@ -15,11 +15,16 @@
 
 ![Image](pic1.png)
 
+### TA 
+
+> Your `ListExamples.java` issue seems to be a type mismatch. To combine integers and strings in one list, I recommend using `List<Object>`. This allows any object type but be cautious, as it reduces type safety.
+
+### Student
+
+> Thank you this fixed my error compiling but there is still an issue when I run `bash grade.sh` it says that the test failed even though I am sure that my Test makes sense, is there anything I could do to trace back to this issue?
 
 
 ### TA
-
-
 
 >  An easy way to figure out what is wrong with your code is to compile your `ListExamples.java` file, you can do that by running the command,
 
@@ -65,7 +70,7 @@ java ListExamples
 
 
 
-### My code before
+### My code before fixing the type issue.
 
 
 > TestListExamples.java
@@ -129,6 +134,8 @@ else
 fi
 ```
 
+### My code before fixing the logic of my ListExamples.java 
+
 
 
 ### The command line that triggered the issue: 
@@ -181,8 +188,8 @@ import java.util.List;
 
 public class ListExamples {
 
-    public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2) {
-        List<Integer> mergedList = new ArrayList<>();
+    public static List<Object> mergeLists(List<Object> list1, List<Object> list2) {
+        List<Object> mergedList = new ArrayList<>();
         
         mergedList.addAll(list1);
         mergedList.addAll(list2);
@@ -191,11 +198,12 @@ public class ListExamples {
     }
 
     public static void main(String[] args) {
-        List<Integer> list1 = List.of(1, 2, 3);
-        List<Integer> list2 = List.of(4, 5, 6);
+        List<Object> list1 = List.of("a", "b", "c");
+        List<Object> list2 = List.of(1, 2, 3);
         System.out.println("Merged List: " + mergeLists(list1, list2));
     }
 }
+
 
 ```
 
