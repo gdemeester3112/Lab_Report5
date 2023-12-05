@@ -21,7 +21,7 @@
 
 ### Student
 
-> Thank you this fixed my error compiling but there is still an issue when I run `bash grade.sh` it says that the test failed even though I am sure that my Test makes sense, is there anything I could do to trace back to this issue?
+> Thank you this fixed my error compiling, I needed to use Object to have a more generic type to handle integers and Strings but there is still an issue when I run `bash grade.sh` it says that the test failed even though I am sure that my Test makes sense, is there anything I could do to trace back to this issue?
 
 
 ![Image](pic2.png)
