@@ -275,7 +275,9 @@ fi
 ### Edits I did to my code:
 
 > I took away the `for` loops that modified incorrectly my list1
+
 > I used the `addAll` method to add all of list1 elements first and then list2 elements second so they are in order
+
 > Fixed my `addAll` method so it doesnt add the same list twice
 
 ## Part 2
