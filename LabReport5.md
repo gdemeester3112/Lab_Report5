@@ -6,7 +6,7 @@
 
 
 
-> Hello, I'm facing an issue with my `ListExamples.java` file. When I run my `grade.sh` script for grading a Java assignment using `ListExamples.java`, it fails during compilation.
+> Hello, I'm facing an issue with my `ListExamples.java` file. When I run my `grade.sh` script for grading a Java assignment using `TestListExamples.java`, it fails during compilation.
 > Can you help me troubleshoot this?"
 
 
