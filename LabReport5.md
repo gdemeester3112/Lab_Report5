@@ -138,7 +138,42 @@ fi
 
 ### My code before fixing the logic of my ListExamples.java 
 
+> ListExamples.java
 
+```
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExamples {
+
+    public static List<Object> mergeLists(List<Object> list1, List<Object> list2) {
+        List<Object> mergedList = new ArrayList<>();
+        
+        mergedList.addAll(list2);
+        mergedList.addAll(list2);
+        
+        return mergedList;
+    }
+
+    public static void main(String[] args) {
+        List<Object> list1 = List.of("a", "b", "c");
+        List<Object> list2 = List.of(1, 2, 3);
+    }
+}
+```
+
+> grade.sh 
+
+```
+CPATH=".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar"
+javac -cp "$CPATH" ListExamples.java TestListExamples.java
+
+if [ $? -eq 0 ]; then
+    java -cp "$CPATH" org.junit.runner.JUnitCore TestListExamples
+else
+    echo "Compilation failed."
+fi
+```
 
 ### The command line that triggered the issue: 
 
