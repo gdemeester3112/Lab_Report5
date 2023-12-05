@@ -85,7 +85,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TestListExamples {
-  @Test(timeout = 500)
+  @Test
   public void testMergeRightEnd() {
     List<Object> list1 = Arrays.asList(1, 2, 3);
     List<Object> list2 = Arrays.asList("a", "b", "c");
@@ -149,7 +149,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TestListExamples {
-  @Test(timeout = 500)
+  @Test
   public void testMergeRightEnd() {
     List<Object> list1 = Arrays.asList(1, 2, 3);
     List<Object> list2 = Arrays.asList("a", "b", "c");
@@ -216,7 +216,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TestListExamples {
-  @Test(timeout = 500)
+  @Test
   public void testMergeRightEnd() {
     List<Object> list1 = Arrays.asList(1, 2, 3);
     List<Object> list2 = Arrays.asList("a", "b", "c");
