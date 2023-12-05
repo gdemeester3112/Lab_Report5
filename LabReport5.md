@@ -13,7 +13,7 @@
 ``` I ran bash grade.sh ```
 
 
-![Image](MergeList_symptom.png)
+![Image](pic1.png)
 
 
 
