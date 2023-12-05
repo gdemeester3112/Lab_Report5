@@ -67,21 +67,160 @@ java ListExamples
 
 ### My code before
 
-![Image](Before_code.png)
 
-> This was my grade.sh file before I implemeted the changes I will only be showing this file as it is the only one that induces errors.
+> TestListExamples.java
 
-### The command line that triggered the bug: 
+
+```
+import static org.junit.Assert.*;
+import org.junit.Test;
+import java.util.Arrays;
+import java.util.List;
+
+public class TestListExamples {
+
+    @Test
+    public void testMergeLists() {
+        
+        List<String> list1 = Arrays.asList("a", "b", "c");
+        List<String> list2 = Arrays.asList("1", "2", "3");
+
+        
+        List<String> expected = Arrays.asList("a", "b", "c", "1", "2", "3");
+
+        
+        List<String> result = ListExamples.mergeLists(list1, list2);
+
+        
+        assertEquals("Merged list should contain all elements from both lists", expected, result);
+    }
+
+}
+```
+
+> ListExamples.java
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExamples {
+
+    public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2) {
+        List<Integer> mergedList = new ArrayList<>();
+        for (int i = 0; i < list1.size(); i++) {
+            mergedList.add(list1.get(i) + list2.size());
+        }
+        for (int j = 0; j < list2.size(); j++) {
+            mergedList.add(list2.get(j));
+        }
+        return mergedList;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list1 = List.of(1, 2, 3);
+        List<Integer> list2 = List.of(4, 5, 6);
+        System.out.println("Merged List: " + mergeLists(list1, list2));
+    }
+}
+```
+
+> grade.sh 
+
+```
+CPATH=".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar"
+javac -cp "$CPATH" ListExamples.java TestListExamples.java
+
+if [ $? -eq 0 ]; then
+    java -cp "$CPATH" org.junit.runner.JUnitCore TestListExamples
+else
+    echo "Compilation failed."
+fi
+```
+
+
+
+### The command line that triggered the issue: 
 
 ![Image](Command_Ran.png)
 
-> This was the command I ran to run my grade.sh file which caused a bug
+> This was the command I ran to run my grade.sh file which caused the issue. It used the TestListExamples.java to catch this issue.
 
 ### This is my code after
 
-![Image](After_code.png)
+> TestListExamples.java
 
-> This was my code after I fixed my grade.sh, as you can see the file will now run appropriately with my lib which will make it compile fine, and i do not have a nonexistant file which is getting copied to grading-area.
+
+```
+import static org.junit.Assert.*;
+import org.junit.Test;
+import java.util.Arrays;
+import java.util.List;
+
+public class TestListExamples {
+
+    @Test
+    public void testMergeLists() {
+        
+        List<String> list1 = Arrays.asList("a", "b", "c");
+        List<String> list2 = Arrays.asList("1", "2", "3");
+
+        
+        List<String> expected = Arrays.asList("a", "b", "c", "1", "2", "3");
+
+        
+        List<String> result = ListExamples.mergeLists(list1, list2);
+
+        
+        assertEquals("Merged list should contain all elements from both lists", expected, result);
+    }
+
+}
+```
+
+
+> ListExamples.java
+
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExamples {
+
+    public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2) {
+        List<Integer> mergedList = new ArrayList<>();
+        
+        mergedList.addAll(list1);
+        mergedList.addAll(list2);
+        
+        return mergedList;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list1 = List.of(1, 2, 3);
+        List<Integer> list2 = List.of(4, 5, 6);
+        System.out.println("Merged List: " + mergeLists(list1, list2));
+    }
+}
+
+```
+
+> grade.sh 
+
+```
+CPATH=".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar"
+javac -cp "$CPATH" ListExamples.java TestListExamples.java
+
+if [ $? -eq 0 ]; then
+    java -cp "$CPATH" org.junit.runner.JUnitCore TestListExamples
+else
+    echo "Compilation failed."
+fi
+```
+
+
+> This was my code after I fixed ListExamples.java , as you can see the file will now run appropriately which will make it pass the test fine.
 
 ### Edits I did to my code:
 
