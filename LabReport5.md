@@ -19,9 +19,11 @@ java ListExamples
 ```
 > I also recommend putting print statements to understand what your `ListExamples.java` file's output is.
 
-![Image](after_command_run.png)
 
-> Thank you that helped a lot! I found out that there were two bugs in my grade.sh file, the fist one was that I was that I was referencing a jar file that was not in my lib and the second one was that I was trying to copy a nonexistant file to the grading-area.
+
+> Thank you that helped a lot! I found out that my ListExamples.java was not modifying the list correctly. After compiling the file and running it this is the output I got, I can clearly see that the array isnt the array I was expected there to be.
+
+![Image](MergeListJavac.png)
 
 
 ### The file and directory needed
