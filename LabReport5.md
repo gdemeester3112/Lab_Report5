@@ -24,6 +24,8 @@
 > Thank you this fixed my error compiling but there is still an issue when I run `bash grade.sh` it says that the test failed even though I am sure that my Test makes sense, is there anything I could do to trace back to this issue?
 
 
+![Image](pic2.png)
+
 ### TA
 
 >  An easy way to figure out what is wrong with your code is to compile your `ListExamples.java` file, you can do that by running the command,
