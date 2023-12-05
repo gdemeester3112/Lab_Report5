@@ -33,7 +33,6 @@
 ```
 javac ListExamples.java
 java ListExamples
-
 ```
 > I also recommend putting print statements to understand what your `ListExamples.java` file's output is.
 
