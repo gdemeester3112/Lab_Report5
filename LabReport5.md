@@ -196,13 +196,21 @@ else
 fi
 ```
 
-### The command line that triggered the issue: 
+### The command line that triggered the Error: 
 
 ```
 [user@sahara ~/list-examples-grader]$ bash grade.sh
 ```
 
-> This was the command I used to run my grade.sh file which caused the issue. It used the TestListExamples.java to discover this issue.
+> This was the command I used to run my grade.sh file which caused the error. It used the TestListExamples.java to discover this error.
+
+
+```
+[user@sahara ~/list-examples-grader]$ javac ListExamples.java
+[user@sahara ~/list-examples-grader]$ javac ListExamples
+```
+
+> This was the command I used to compile `ListExamples.java` and understand that my list was incorrectly adding the same list twice.
 
 ### This is my code after
 
