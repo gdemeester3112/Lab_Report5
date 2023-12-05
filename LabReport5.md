@@ -8,7 +8,7 @@
 ``` I ran bash grade.sh ```
 
 
-![Image](MergeList_symptom)
+![Image](MergeList_symptom.png)
 
 >  An easy way to figure out what is wrong with your code is to compile your `ListExamples.java` file, you can do that by running the command,
 
