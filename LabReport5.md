@@ -224,13 +224,8 @@ fi
 
 ### Edits I did to my code:
 
-> I remove the 14th line of my code that was copy a nonexistant file to grading-area
-
-> I edited the 24th line from
-
-> `javac -cp ' .:lib/beans-jar-file.jar' *.java ` ---->
-
-> `javac -cp '.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar' *.java `
+> I took away the `for` loops that modified incorrectly my list1
+> I used the `addAll` method to add all of list1 elements first and then list2 elements second so they are in order
 
 ## Part 2
 
