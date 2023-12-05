@@ -1,6 +1,8 @@
 # Lab Report 5
 ## Part 1
 
+### Student
+
 > Hello, I'm facing an issue with my `ListExamples.java` file. When I run my `grade.sh` script for grading a Java assignment using `ListExamples.java`, it fails during compilation.
 > Can you help me troubleshoot this?"
 
@@ -9,6 +11,8 @@
 
 
 ![Image](MergeList_symptom.png)
+
+### TA
 
 >  An easy way to figure out what is wrong with your code is to compile your `ListExamples.java` file, you can do that by running the command,
 
@@ -19,7 +23,7 @@ java ListExamples
 ```
 > I also recommend putting print statements to understand what your `ListExamples.java` file's output is.
 
-
+### Student
 
 > Thank you that helped a lot! I found out that my ListExamples.java was not modifying the list correctly. After compiling the file and running it this is the output I got, I can clearly see that the array isnt the array I was expected there to be.
 
@@ -32,23 +36,20 @@ java ListExamples
 [user@sahara ~]$ tree
 .
 └── list-examples-grader
-    ├── GradeServer.java
     ├── grade.sh
-    ├── grading-area
-    │ └── lib
-    │     ├── hamcrest-core-1.3.jar
-    │     └── junit-4.13.2.jar
     ├── lib
-    │ ├── hamcrest-core-1.3.jar
-    │ └── junit-4.13.2.jar
-    ├── Server.java
+    │   ├── hamcrest-core-1.3.jar
+    │   └── junit-4.13.2.jar
+    ├── ListExamples.class
+    ├── ListExamples.java
+    ├── TestListExamples.class
     └── TestListExamples.java
 
-5 directories, 8 files
+3 directories, 7 files
 
 ```
 
-> From the home directory of edstem we can see that there is a directory called list-examples-grader that contains all the files after running bash grade.sh
+> From the home directory of edstem we can see that there is a directory called list-examples-grader that contains all the files after such as ListExamples.java which Merges lists and TestListExamples.java that has special test cases to see if ListExamples.java is correctly implemented. I also have the lib folder that contains the reference to run junit tests and my grade.sh file that tests ListExamples.java with TestListExamples.java
 
 
 
